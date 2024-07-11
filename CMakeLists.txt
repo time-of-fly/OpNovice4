@@ -51,6 +51,7 @@ set(OpNovice4_SCRIPTS
     vis.mac
     wls.mac
     air_block3.stl
+    optical_test.mac
   )
 
 foreach(_script ${OpNovice4_SCRIPTS})

@@ -104,7 +104,8 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   //auto tank_box = new G4Box("Tank", fTank_x, fTank_y, fTank_z);
   auto bunny_mesh = CADMesh::TessellatedMesh::FromSTL("./air_block3.stl");
   //5.9*5.9*1.5
-  bunny_mesh->SetScale(1000.0);
+  //1==10m
+  bunny_mesh->SetScale(10000.0);
   auto fTank_LV = new G4LogicalVolume( bunny_mesh->GetSolid() 
                                            , fTankMaterial
                                            , "Tank"

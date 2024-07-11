@@ -4,27 +4,46 @@
 /process/optical/verbose 1
 /control/cout/ignoreThreadsExcept 0
 
-/opnovice2/boxProperty RINDEX    0.000002 1.4     0.000008 1.41
-/opnovice2/boxProperty ABSLENGTH 0.000002 10000 0.000005 20000 0.000008 30000
+/OpNovice4/boxProperty RINDEX    0.000002 1.4     0.000008 1.41
+/OpNovice4/boxProperty ABSLENGTH 0.000002 10000 0.000005 20000 0.000008 30000
 
-/opnovice2/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
-/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
+/OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 
-/opnovice2/surfaceModel unified
-/opnovice2/surfaceType dielectric_dielectric
+/OpNovice4/surfaceModel unified
+/OpNovice4/surfaceType dielectric_dielectric
 
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 
-/opnovice2/surfaceProperty REFLECTIVITY  0.000002 1.0 0.000008 1.0
+/OpNovice4/surfaceProperty REFLECTIVITY  0.000002 1.0 0.000008 1.0
 
 /run/initialize
 #
 /gun/particle opticalphoton
 /gun/energy 5 eV
-/gun/position 0 0 0 cm
+/gun/position 0 0 -10 m
 /gun/direction 0 0 1
 #
-
+/OpNovice4/gun/randomDirection false
 /analysis/setFileName fresnel_10
-/opnovice2/gun/optPhotonPolar 10. deg
+/OpNovice4/gun/optPhotonPolar 10. deg
+/run/beamOn 50
+
+/gun/direction 0 0.1 1
+/run/beamOn 50
+/gun/direction 0 0.2 1
+/run/beamOn 50
+/gun/direction 0 0.3 1
+/run/beamOn 50
+/gun/direction 0 0.4 1
+/run/beamOn 50
+/gun/direction 0 0.5 1
+/run/beamOn 50
+/gun/direction 0 0.6 1
+/run/beamOn 50
+/gun/direction 0 0.7 1
+/run/beamOn 50
+/gun/direction 0 0.8 1
+/run/beamOn 50
+/gun/direction 0 0.9 1
 /run/beamOn 50
