@@ -4,10 +4,16 @@
 /process/optical/verbose 1
 /control/cout/ignoreThreadsExcept 0
 
-/OpNovice4/boxProperty RINDEX    0.000002 1.4     0.000008 1.41
+#/OpNovice4/boxProperty RINDEX    0.000002 1.4     0.000008 1.41
+#/OpNovice4/boxProperty ABSLENGTH 0.000002 10000 0.000005 20000 0.000008 30000
+
+#/OpNovice4/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
+#/OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+
+/OpNovice4/boxProperty RINDEX    0.000002 1.01     0.000008 1.01
 /OpNovice4/boxProperty ABSLENGTH 0.000002 10000 0.000005 20000 0.000008 30000
 
-/OpNovice4/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
+/OpNovice4/worldProperty RINDEX    0.000002 1.4    0.000008 1.41
 /OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 
 /OpNovice4/surfaceModel unified
