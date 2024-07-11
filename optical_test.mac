@@ -52,4 +52,4 @@
 #/gun/direction 0 0.8 1
 #/run/beamOn 50
 /gun/direction 0 0.9 1
-/run/beamOn 50
+/run/beamOn 65536
