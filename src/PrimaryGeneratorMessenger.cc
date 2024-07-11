@@ -84,7 +84,9 @@ void PrimaryGeneratorMessenger::SetNewValue(G4UIcommand* command, G4String newVa
     }
   }
   else if (command == fRandomDirectionCmd) {
-    fPrimaryAction->SetRandomDirection(true);
+    //GetNewBoolValue
+    G4bool s_randomDir = fRandomDirectionCmd->GetNewBoolValue(newValue);
+    fPrimaryAction->SetRandomDirection(s_randomDir);
   }
 }
 
