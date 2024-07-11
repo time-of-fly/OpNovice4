@@ -97,7 +97,7 @@ Some /vis commands (optionally) take a string to specify colour.
 /process/optical/verbose 1
 /run/physicsModified
 /control/cout/ignoreThreadsExcept 0
-/opnovice2/boxProperty RINDEX 0.000002 1.4 0.000008 1.4
+/OpNovice4/boxProperty RINDEX 0.000002 1.4 0.000008 1.4
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.4
@@ -106,7 +106,7 @@ The MPT for the box is now:
 2e-06   214.137
 8e-06   214.137
 .............
-/opnovice2/boxProperty ABSLENGTH 0.000002 100 0.000005 200 0.000008 300
+/OpNovice4/boxProperty ABSLENGTH 0.000002 100 0.000005 200 0.000008 300
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.4
@@ -119,7 +119,7 @@ The MPT for the box is now:
 5e-06   200
 8e-06   300
 .............
-/opnovice2/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
+/OpNovice4/worldProperty RINDEX 0.000002 1.0 0.000008 1.0
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1
@@ -128,7 +128,7 @@ The MPT for the world is now:
 2e-06   299.792
 8e-06   299.792
 .............
-/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1
@@ -141,18 +141,18 @@ The MPT for the world is now:
 5e-06   2e+06
 8e-06   3e+06
 .............
-/opnovice2/surfaceModel unified
+/OpNovice4/surfaceModel unified
 /run/geometryModified
-/opnovice2/surfaceType coated
+/OpNovice4/surfaceType coated
 /run/geometryModified
-/opnovice2/surfaceProperty REFLECTIVITY 0.000002 1.0 0.000008 1.0
+/OpNovice4/surfaceProperty REFLECTIVITY 0.000002 1.0 0.000008 1.0
 REFLECTIVITY 0.000002 1.0 0.000008 1.0
 The MPT for the surface is now: 
 1: REFLECTIVITY
 2e-06   1
 8e-06   1
 .............
-/opnovice2/surfaceProperty COATEDRINDEX 0.000002 1.7 0.000008 1.7
+/OpNovice4/surfaceProperty COATEDRINDEX 0.000002 1.7 0.000008 1.7
 COATEDRINDEX 0.000002 1.7 0.000008 1.7
 The MPT for the surface is now: 
 1: REFLECTIVITY
@@ -162,7 +162,7 @@ The MPT for the surface is now:
 2e-06   1.7
 8e-06   1.7
 .............
-/opnovice2/surfaceConstProperty COATEDTHICKNESS 100e-6
+/OpNovice4/surfaceConstProperty COATEDTHICKNESS 100e-6
 The MPT for the surface is now: 
 1: REFLECTIVITY
 2e-06   1
@@ -204,7 +204,7 @@ OpWLS2 is created
 /gun/energy 5 eV
 /gun/position 99.99 0 0 cm
 /gun/direction 1 0 0
-/opnovice2/gun/optPhotonPolar 0. deg
+/OpNovice4/gun/optPhotonPolar 0. deg
 #
 /analysis/setFileName coated_0
 /analysis/h1/set 20 90 0 90
@@ -1045,7 +1045,7 @@ There are histograms that can be viewed with visualization:
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
 /analysis/setFileName coated_90
-/opnovice2/gun/optPhotonPolar 90. deg
+/OpNovice4/gun/optPhotonPolar 90. deg
 /run/beamOn 500000
 
 ========= Table of registered couples ============================

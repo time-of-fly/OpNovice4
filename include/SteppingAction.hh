@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 //
-/// \file optical/OpNovice2/include/SteppingAction.hh
+/// \file optical/OpNovice4/include/SteppingAction.hh
 /// \brief Definition of the SteppingAction class
 //
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

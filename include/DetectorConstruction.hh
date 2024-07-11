@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/include/DetectorConstruction.hh
+/// \file optical/OpNovice4/include/DetectorConstruction.hh
 /// \brief Definition of the DetectorConstruction class
 //
 //
@@ -99,9 +99,9 @@ class DetectorConstruction : public G4VUserDetectorConstruction
     G4Material* GetTankMaterial() const { return fTankMaterial; }
 
   private:
-    G4double fExpHall_x = 10. * CLHEP::m;
-    G4double fExpHall_y = 10. * CLHEP::m;
-    G4double fExpHall_z = 10. * CLHEP::m;
+    G4double fExpHall_x = 100. * CLHEP::m;
+    G4double fExpHall_y = 100. * CLHEP::m;
+    G4double fExpHall_z = 100. * CLHEP::m;
 
     G4VPhysicalVolume* fTank = nullptr;
 

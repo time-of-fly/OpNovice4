@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/PrimaryGeneratorMessenger.cc
+/// \file optical/OpNovice4/src/PrimaryGeneratorMessenger.cc
 /// \brief Implementation of the PrimaryGeneratorMessenger class
 //
 //
@@ -44,10 +44,10 @@
 PrimaryGeneratorMessenger::PrimaryGeneratorMessenger(PrimaryGeneratorAction* Gun)
   : G4UImessenger(), fPrimaryAction(Gun)
 {
-  fGunDir = new G4UIdirectory("/opnovice2/gun/");
+  fGunDir = new G4UIdirectory("/OpNovice4/gun/");
   fGunDir->SetGuidance("PrimaryGenerator control");
 
-  fPolarCmd = new G4UIcmdWithADoubleAndUnit("/opnovice2/gun/optPhotonPolar", this);
+  fPolarCmd = new G4UIcmdWithADoubleAndUnit("/OpNovice4/gun/optPhotonPolar", this);
   fPolarCmd->SetGuidance("Set linear polarization angle w.r.t. (k,n) plane");
   fPolarCmd->SetParameterName("angle", true);
   fPolarCmd->SetUnitCategory("Angle");
@@ -55,7 +55,7 @@ PrimaryGeneratorMessenger::PrimaryGeneratorMessenger(PrimaryGeneratorAction* Gun
   fPolarCmd->SetDefaultUnit("deg");
   fPolarCmd->AvailableForStates(G4State_Idle);
 
-  fRandomDirectionCmd = new G4UIcmdWithABool("/opnovice2/gun/randomDirection", this);
+  fRandomDirectionCmd = new G4UIcmdWithABool("/OpNovice4/gun/randomDirection", this);
   fRandomDirectionCmd->SetGuidance("Set direction of each primary particle randomly.");
   fRandomDirectionCmd->SetDefaultValue(true);
   fRandomDirectionCmd->AvailableForStates(G4State_Idle, G4State_PreInit);

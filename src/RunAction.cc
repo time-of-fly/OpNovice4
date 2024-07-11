@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/RunAction.cc
+/// \file optical/OpNovice4/src/RunAction.cc
 /// \brief Implementation of the RunAction class
 //
 //

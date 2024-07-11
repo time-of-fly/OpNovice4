@@ -25,7 +25,7 @@
 //
 //
 //
-/// \file optical/OpNovice2/include/ActionInitialization.hh
+/// \file optical/OpNovice4/include/ActionInitialization.hh
 /// \brief Definition of the ActionInitialization class
 
 #ifndef ActionInitialization_h

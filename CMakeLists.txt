@@ -31,17 +31,17 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.hh)
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(OpNovice2 OpNovice2.cc ${sources} ${headers})
-target_link_libraries(OpNovice2 ${Geant4_LIBRARIES} )
+add_executable(OpNovice4 OpNovice4.cc ${sources} ${headers})
+target_link_libraries(OpNovice4 ${Geant4_LIBRARIES} )
 
 #----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we
-# build OpNovice2. This is so that we can run the executable directly because it
+# build OpNovice4. This is so that we can run the executable directly because it
 # relies on these scripts being in the current working directory.
 #
-set(OpNovice2_SCRIPTS
-    OpNovice2.out
-    OpNovice2.mac
+set(OpNovice4_SCRIPTS
+    OpNovice4.out
+    OpNovice4.mac
     boundary.mac
     complexRindex.mac
     electron.mac
@@ -50,9 +50,10 @@ set(OpNovice2_SCRIPTS
     scint_by_particle.mac
     vis.mac
     wls.mac
+    air_block3.stl
   )
 
-foreach(_script ${OpNovice2_SCRIPTS})
+foreach(_script ${OpNovice4_SCRIPTS})
   configure_file(
     ${PROJECT_SOURCE_DIR}/${_script}
     ${PROJECT_BINARY_DIR}/${_script}

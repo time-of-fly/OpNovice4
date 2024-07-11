@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/SteppingMessenger.cc
+/// \file optical/OpNovice4/src/SteppingMessenger.cc
 /// \brief Implementation of the SteppingMessenger class
 //
 //
@@ -42,10 +42,10 @@
 SteppingMessenger::SteppingMessenger(SteppingAction* steppingAction)
   : G4UImessenger(), fSteppingAction(steppingAction)
 {
-  fSteppingDir = new G4UIdirectory("/opnovice2/stepping/");
+  fSteppingDir = new G4UIdirectory("/OpNovice4/stepping/");
   fSteppingDir->SetGuidance("Stepping control");
 
-  fKillOnSecondSurfaceCmd = new G4UIcmdWithABool("/opnovice2/stepping/killOnSecondSurface", this);
+  fKillOnSecondSurfaceCmd = new G4UIcmdWithABool("/OpNovice4/stepping/killOnSecondSurface", this);
   fKillOnSecondSurfaceCmd->SetGuidance(
     "Kill the optical photon when it reaches a second surface. "
     "Useful for visualizing boundary scattering.");

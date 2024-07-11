@@ -24,8 +24,8 @@
 // ********************************************************************
 //
 //
-/// \file optical/OpNovice2/OpNovice2.cc
-/// \brief Main program of the optical/OpNovice2 example
+/// \file optical/OpNovice4/OpNovice4.cc
+/// \brief Main program of the optical/OpNovice4 example
 //
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

@@ -1,0 +1,30 @@
+/control/verbose 2
+/tracking/verbose 0
+/run/verbose 1
+/process/optical/verbose 1
+/control/cout/ignoreThreadsExcept 0
+
+/opnovice2/boxProperty RINDEX    0.000002 1.4     0.000008 1.41
+/opnovice2/boxProperty ABSLENGTH 0.000002 10000 0.000005 20000 0.000008 30000
+
+/opnovice2/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
+/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+
+/opnovice2/surfaceModel unified
+/opnovice2/surfaceType dielectric_dielectric
+
+/opnovice2/surfaceFinish polished
+
+/opnovice2/surfaceProperty REFLECTIVITY  0.000002 1.0 0.000008 1.0
+
+/run/initialize
+#
+/gun/particle opticalphoton
+/gun/energy 5 eV
+/gun/position 0 0 0 cm
+/gun/direction 0 0 1
+#
+
+/analysis/setFileName fresnel_10
+/opnovice2/gun/optPhotonPolar 10. deg
+/run/beamOn 50

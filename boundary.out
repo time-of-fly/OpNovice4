@@ -97,7 +97,7 @@ Some /vis commands (optionally) take a string to specify colour.
 /process/optical/verbose 1
 /run/physicsModified
 /control/cout/ignoreThreadsExcept 0
-/opnovice2/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
+/OpNovice4/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -106,7 +106,7 @@ The MPT for the box is now:
 2e-06   218.486
 8e-06   203.645
 .............
-/opnovice2/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -119,7 +119,7 @@ The MPT for the box is now:
 5e-06   2e+06
 8e-06   3e+06
 .............
-/opnovice2/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
+/OpNovice4/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.01
@@ -128,7 +128,7 @@ The MPT for the world is now:
 2e-06   296.824
 8e-06   296.824
 .............
-/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.01
@@ -141,14 +141,14 @@ The MPT for the world is now:
 5e-06   2e+06
 8e-06   3e+06
 .............
-/opnovice2/surfaceProperty SPECULARLOBECONSTANT 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty SPECULARLOBECONSTANT 0.000002 0.1 0.000008 0.1
 SPECULARLOBECONSTANT 0.000002 0.1 0.000008 0.1
 The MPT for the surface is now: 
 6: SPECULARLOBECONSTANT
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
 SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
 The MPT for the surface is now: 
 6: SPECULARLOBECONSTANT
@@ -158,7 +158,7 @@ The MPT for the surface is now:
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty BACKSCATTERCONSTANT 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty BACKSCATTERCONSTANT 0.000002 0.1 0.000008 0.1
 BACKSCATTERCONSTANT 0.000002 0.1 0.000008 0.1
 The MPT for the surface is now: 
 6: SPECULARLOBECONSTANT
@@ -171,7 +171,7 @@ The MPT for the surface is now:
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty TRANSMITTANCE 0.000002 0.1 0.000008 0.1
 TRANSMITTANCE 0.000002 0.1 0.000008 0.1
 The MPT for the surface is now: 
 5: TRANSMITTANCE
@@ -187,7 +187,7 @@ The MPT for the surface is now:
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty REFLECTIVITY 0.000002 0.8 0.000008 0.8
+/OpNovice4/surfaceProperty REFLECTIVITY 0.000002 0.8 0.000008 0.8
 REFLECTIVITY 0.000002 0.8 0.000008 0.8
 The MPT for the surface is now: 
 1: REFLECTIVITY
@@ -206,7 +206,7 @@ The MPT for the surface is now:
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty EFFICIENCY 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty EFFICIENCY 0.000002 0.1 0.000008 0.1
 EFFICIENCY 0.000002 0.1 0.000008 0.1
 The MPT for the surface is now: 
 1: REFLECTIVITY
@@ -228,7 +228,7 @@ The MPT for the surface is now:
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty RINDEX 0.000002 1.4 0.000008 1.5
+/OpNovice4/surfaceProperty RINDEX 0.000002 1.4 0.000008 1.5
 RINDEX 0.000002 1.4 0.000008 1.5
 The MPT for the surface is now: 
 0: RINDEX
@@ -256,7 +256,7 @@ The MPT for the surface is now:
 2e-06   203.645
 8e-06   190.691
 .............
-/opnovice2/surfaceSigmaAlpha 0.2
+/OpNovice4/surfaceSigmaAlpha 0.2
 /run/geometryModified
 Surface sigma alpha set to: 0.2
 /run/initialize
@@ -286,14 +286,14 @@ OpWLS is created
 OpWLS2 is created 
 ### Birks coefficients used in run time
    G4_WATER     0.126 mm/MeV     0.0126 g/cm^2/MeV  massFactor=  640.135 effCharge= 22
-/opnovice2/stepping/killOnSecondSurface true
+/OpNovice4/stepping/killOnSecondSurface true
 #
 /gun/particle opticalphoton
 /gun/energy 3 eV
 /gun/position 0 0 0 cm
 # will be normalized
 /gun/direction .9 .44 0
-/opnovice2/gun/optPhotonPolar
+/OpNovice4/gun/optPhotonPolar
 #
 /analysis/setFileName unified
 /analysis/h1/set 10 40 -1 39
@@ -309,14 +309,14 @@ OpWLS2 is created
 ###############################################################################
 ################################# UNIFIED #####################################
 ###############################################################################
-/opnovice2/surfaceModel unified
+/OpNovice4/surfaceModel unified
 /run/geometryModified
-/opnovice2/surfaceType dielectric_dielectric
+/OpNovice4/surfaceType dielectric_dielectric
 /run/geometryModified
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ground ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/geometryModified
 ## unified, davis, lut use sigma_alpha glisur uses polish
 /run/beamOn 10000
@@ -1156,11 +1156,11 @@ There are histograms that can be viewed with visualization:
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
 # restore default
-#/opnovice2/surfaceSigmaAlpha 0.0
+#/OpNovice4/surfaceSigmaAlpha 0.0
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ polished ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1245,7 +1245,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.01
 The MPT for the surface is now: 
 0: RINDEX
 2e-06   1.4
@@ -1357,7 +1357,7 @@ There are histograms that can be viewed with visualization:
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
 # restore default
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.0
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.0
 The MPT for the surface is now: 
 0: RINDEX
 2e-06   1.4
@@ -1388,7 +1388,7 @@ The MPT for the surface is now:
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ painted ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish polishedfrontpainted
+/OpNovice4/surfaceFinish polishedfrontpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1472,7 +1472,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish groundfrontpainted
+/OpNovice4/surfaceFinish groundfrontpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1556,7 +1556,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish polishedbackpainted
+/OpNovice4/surfaceFinish polishedbackpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1643,7 +1643,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish groundbackpainted
+/OpNovice4/surfaceFinish groundbackpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1733,9 +1733,9 @@ There are histograms that can be viewed with visualization:
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dielectric_metal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceType dielectric_metal
+/OpNovice4/surfaceType dielectric_metal
 /run/geometryModified
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1819,7 +1819,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -1909,14 +1909,14 @@ There are histograms that can be viewed with visualization:
 ###############################################################################
 ################################# GLISUR ######################################
 ###############################################################################
-/opnovice2/surfaceModel glisur
+/OpNovice4/surfaceModel glisur
 /run/geometryModified
-/opnovice2/surfaceType dielectric_dielectric
+/OpNovice4/surfaceType dielectric_dielectric
 /run/geometryModified
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ polished ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 /run/geometryModified
 /analysis/setFileName glisur
 /run/initialize
@@ -2002,7 +2002,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.01
 The MPT for the surface is now: 
 0: RINDEX
 2e-06   1.4
@@ -2113,7 +2113,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.0
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.0
 The MPT for the surface is now: 
 0: RINDEX
 2e-06   1.4
@@ -2144,10 +2144,10 @@ The MPT for the surface is now:
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ground ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/geometryModified
 /run/initialize
-/opnovice2/surfacePolish 0.2
+/OpNovice4/surfacePolish 0.2
 /run/geometryModified
 Surface polish set to: 0.2
 /run/beamOn 10000
@@ -2234,13 +2234,13 @@ There are histograms that can be viewed with visualization:
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
 # restore default
-/opnovice2/surfacePolish 1.0
+/OpNovice4/surfacePolish 1.0
 /run/geometryModified
 Surface polish set to: 1
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ painted ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish polishedfrontpainted
+/OpNovice4/surfaceFinish polishedfrontpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -2324,7 +2324,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish polishedbackpainted
+/OpNovice4/surfaceFinish polishedbackpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -2409,7 +2409,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish groundfrontpainted
+/OpNovice4/surfaceFinish groundfrontpainted
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -2493,9 +2493,9 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish groundbackpainted
+/OpNovice4/surfaceFinish groundbackpainted
 /run/geometryModified
-/opnovice2/surfacePolish 0.2
+/OpNovice4/surfacePolish 0.2
 /run/geometryModified
 Surface polish set to: 0.2
 /run/initialize
@@ -2592,15 +2592,15 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfacePolish 1.0
+/OpNovice4/surfacePolish 1.0
 /run/geometryModified
 Surface polish set to: 1
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dielectric_metal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceType dielectric_metal
+/OpNovice4/surfaceType dielectric_metal
 /run/geometryModified
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 /run/geometryModified
 /run/initialize
 /run/beamOn 10000
@@ -2684,10 +2684,10 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/geometryModified
 /run/initialize
-/opnovice2/surfacePolish 0.2
+/OpNovice4/surfacePolish 0.2
 /run/geometryModified
 Surface polish set to: 0.2
 /run/beamOn 10000
@@ -2771,17 +2771,17 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfacePolish 1.0
+/OpNovice4/surfacePolish 1.0
 /run/geometryModified
 Surface polish set to: 1
 ###############################################################################
 ################################# DAVIS LUT ###################################
 ###############################################################################
-/opnovice2/surfaceModel DAVIS
+/OpNovice4/surfaceModel DAVIS
 /run/geometryModified
-/opnovice2/surfaceType dielectric_LUTDAVIS
+/OpNovice4/surfaceType dielectric_LUTDAVIS
 /run/geometryModified
-/opnovice2/surfaceFinish RoughTeflon_LUT
+/OpNovice4/surfaceFinish RoughTeflon_LUT
 G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/RoughTeflon_LUT.z successfully read in.
 LUT DAVIS - data file: RoughTeflon_LUT.z read in! 
 G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/RoughTeflon_LUTR.z successfully read in.
@@ -2869,7 +2869,7 @@ There are histograms that can be viewed with visualization:
   But...there are no entries. To make your histograms available for
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
-/opnovice2/surfaceFinish Detector_LUT
+/OpNovice4/surfaceFinish Detector_LUT
 G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/Detector_LUT.z successfully read in.
 LUT DAVIS - data file: Detector_LUT.z read in! 
 G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/Detector_LUTR.z successfully read in.
@@ -2959,11 +2959,11 @@ There are histograms that can be viewed with visualization:
 ###############################################################################
 ################################# LUT (LBNL) ##################################
 ###############################################################################
-/opnovice2/surfaceModel LUT
+/OpNovice4/surfaceModel LUT
 /run/geometryModified
-/opnovice2/surfaceType dielectric_LUT
+/OpNovice4/surfaceType dielectric_LUT
 /run/geometryModified
-/opnovice2/surfaceFinish polishedlumirrorair
+/OpNovice4/surfaceFinish polishedlumirrorair
 G4OpticalSurface: data file /cvmfs/geant4.cern.ch/share/data/RealSurface2.2/PolishedLumirror.z successfully read in.
 LUT - data file: PolishedLumirror.z read in! 
 /run/geometryModified

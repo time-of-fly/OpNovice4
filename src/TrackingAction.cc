@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/TrackingAction.cc
+/// \file optical/OpNovice4/src/TrackingAction.cc
 /// \brief Implementation of the TrackingAction class
 //
 //

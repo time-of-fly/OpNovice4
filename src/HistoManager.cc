@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/HistoManager.cc
+/// \file optical/OpNovice4/src/HistoManager.cc
 /// \brief Implementation of the HistoManager class
 //
 //
@@ -37,7 +37,7 @@
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-HistoManager::HistoManager() : fFileName("opnovice2")
+HistoManager::HistoManager() : fFileName("OpNovice4")
 {
   Book();
 }

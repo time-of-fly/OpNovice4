@@ -97,7 +97,7 @@ Some /vis commands (optionally) take a string to specify colour.
 /process/optical/verbose 1
 /run/physicsModified
 /control/cout/ignoreThreadsExcept 0
-/opnovice2/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
+/OpNovice4/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -106,7 +106,7 @@ The MPT for the box is now:
 2e-06   218.486
 8e-06   203.645
 .............
-/opnovice2/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -119,7 +119,7 @@ The MPT for the box is now:
 5e-06   2e+06
 8e-06   3e+06
 .............
-/opnovice2/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
+/OpNovice4/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.01
@@ -128,7 +128,7 @@ The MPT for the world is now:
 2e-06   296.824
 8e-06   296.824
 .............
-/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.01
@@ -141,23 +141,23 @@ The MPT for the world is now:
 5e-06   2e+06
 8e-06   3e+06
 .............
-/opnovice2/surfaceModel unified
+/OpNovice4/surfaceModel unified
 /run/geometryModified
-/opnovice2/surfaceType dielectric_dielectric
+/OpNovice4/surfaceType dielectric_dielectric
 /run/geometryModified
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/geometryModified
-/opnovice2/surfaceSigmaAlpha 1.1
+/OpNovice4/surfaceSigmaAlpha 1.1
 /run/geometryModified
 Surface sigma alpha set to: 1.1
-/opnovice2/surfaceProperty SPECULARLOBECONSTANT 0.000002 .1 0.000008 .1
+/OpNovice4/surfaceProperty SPECULARLOBECONSTANT 0.000002 .1 0.000008 .1
 SPECULARLOBECONSTANT 0.000002 .1 0.000008 .1
 The MPT for the surface is now: 
 6: SPECULARLOBECONSTANT
 2e-06   0.1
 8e-06   0.1
 .............
-/opnovice2/surfaceProperty SPECULARSPIKECONSTANT 0.000002 .01 0.000008 .01
+/OpNovice4/surfaceProperty SPECULARSPIKECONSTANT 0.000002 .01 0.000008 .01
 SPECULARSPIKECONSTANT 0.000002 .01 0.000008 .01
 The MPT for the surface is now: 
 6: SPECULARLOBECONSTANT
@@ -167,7 +167,7 @@ The MPT for the surface is now:
 2e-06   0.01
 8e-06   0.01
 .............
-/opnovice2/surfaceProperty BACKSCATTERCONSTANT 0.000002 .05 0.000008 .05
+/OpNovice4/surfaceProperty BACKSCATTERCONSTANT 0.000002 .05 0.000008 .05
 BACKSCATTERCONSTANT 0.000002 .05 0.000008 .05
 The MPT for the surface is now: 
 6: SPECULARLOBECONSTANT
@@ -180,7 +180,7 @@ The MPT for the surface is now:
 2e-06   0.05
 8e-06   0.05
 .............
-/opnovice2/surfaceProperty REFLECTIVITY 0.000002 .99 0.000008 .99
+/OpNovice4/surfaceProperty REFLECTIVITY 0.000002 .99 0.000008 .99
 REFLECTIVITY 0.000002 .99 0.000008 .99
 The MPT for the surface is now: 
 1: REFLECTIVITY
@@ -228,7 +228,7 @@ OpWLS2 is created
 /gun/energy 3 eV
 /gun/position 0 0 0 cm
 /gun/direction 1 0 0
-/opnovice2/gun/optPhotonPolar
+/OpNovice4/gun/optPhotonPolar
 #
 /analysis/h1/set 3 40 -1 39
 /analysis/h1/set 4 100 -1.1 1.1
@@ -1012,9 +1012,9 @@ G4VisManager: Using G4TrajectoryDrawByCharge as fallback trajectory model.
 See commands in /vis/modeling/trajectories/ for other options.
 ### Run 0 starts.
 ... set ntuple merging row mode : row-wise - done
-... create file : opnovice2.root - done
-... open analysis file : opnovice2.root - done
-... open analysis file : opnovice2.root - done
+... create file : OpNovice4.root - done
+... open analysis file : OpNovice4.root - done
+... open analysis file : OpNovice4.root - done
  Run terminated.
 Run Summary
   Number of events processed : 100000
@@ -1065,8 +1065,8 @@ Surface events by process:
  X momentum dir of backward-going photons: mean = -0.685706 rms = 0.244906
  Y momentum dir of backward-going photons: mean = -0.00655794 rms = 0.484159
 
-... write file : opnovice2.root - done
-... close file : opnovice2.root - done
+... write file : OpNovice4.root - done
+... close file : OpNovice4.root - done
 There are histograms that can be viewed with visualization:
   27 h1 histograms(s)
   List them with "/analysis/list".

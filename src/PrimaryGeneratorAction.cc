@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/PrimaryGeneratorAction.cc
+/// \file optical/OpNovice4/src/PrimaryGeneratorAction.cc
 /// \brief Implementation of the PrimaryGeneratorAction class
 //
 //
@@ -42,6 +42,7 @@
 #include "G4ParticleTable.hh"
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
+
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -109,7 +110,7 @@ void PrimaryGeneratorAction::SetOptPhotonPolar(G4double angle)
   if (fParticleGun->GetParticleDefinition() != G4OpticalPhoton::OpticalPhotonDefinition()) {
     G4ExceptionDescription ed;
     ed << "The particleGun is not an opticalphoton.";
-    G4Exception("PrimaryGeneratorAction::SetOptPhotonPolar", "OpNovice2_004", JustWarning, ed);
+    G4Exception("PrimaryGeneratorAction::SetOptPhotonPolar", "OpNovice4_004", JustWarning, ed);
     return;
   }
 

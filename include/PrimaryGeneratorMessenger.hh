@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/include/PrimaryGeneratorMessenger.hh
+/// \file optical/OpNovice4/include/PrimaryGeneratorMessenger.hh
 /// \brief Definition of the PrimaryGeneratorMessenger class
 //
 //

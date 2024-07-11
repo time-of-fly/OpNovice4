@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/DetectorConstruction.cc
+/// \file optical/OpNovice4/src/DetectorConstruction.cc
 /// \brief Implementation of the DetectorConstruction class
 //
 //
@@ -46,6 +46,9 @@
 #include "G4PVPlacement.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4ThreeVector.hh"
+// CADMESH //
+//#define CADMESH_LEXER_VERBOSE
+#include "CADMesh.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -62,8 +65,8 @@ DetectorConstruction::DetectorConstruction()
   fSurface->SetModel(unified);
   fSurface->SetMaterialPropertiesTable(fSurfaceMPT);
 
-  fTankMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_WATER");
-  fWorldMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
+  fTankMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_AIR");
+  fWorldMaterial = G4NistManager::Instance()->FindOrBuildMaterial("G4_WATER");
 
   fDetectorMessenger = new DetectorMessenger(this);
 }
@@ -98,11 +101,20 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
     new G4PVPlacement(nullptr, G4ThreeVector(), fWorld_LV, "World", nullptr, false, 0);
 
   // The tank
-  auto tank_box = new G4Box("Tank", fTank_x, fTank_y, fTank_z);
+  //auto tank_box = new G4Box("Tank", fTank_x, fTank_y, fTank_z);
+  auto bunny_mesh = CADMesh::TessellatedMesh::FromSTL("./air_block3.stl");
+  //5.9*5.9*1.5
+  bunny_mesh->SetScale(1000.0);
+  auto fTank_LV = new G4LogicalVolume( bunny_mesh->GetSolid() 
+                                           , fTankMaterial
+                                           , "Tank"
+                                           
+  );
 
-  fTank_LV = new G4LogicalVolume(tank_box, fTankMaterial, "Tank");
 
-  fTank = new G4PVPlacement(nullptr, G4ThreeVector(), fTank_LV, "Tank", fWorld_LV, false, 0);
+  //fTank_LV = new G4LogicalVolume(tank_box, fTankMaterial, "Tank");
+
+  fTank = new G4PVPlacement(nullptr, G4ThreeVector(-10.*m,-10.*m,0.*m), fTank_LV, "Tank", fWorld_LV, false, 0);
 
   // ------------- Surface --------------
 

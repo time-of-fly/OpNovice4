@@ -97,17 +97,17 @@ Some /vis commands (optionally) take a string to specify colour.
 /process/optical/verbose 1
 /run/physicsModified
 /control/cout/ignoreThreadsExcept 0
-/opnovice2/boxMaterial G4_BGO
+/OpNovice4/boxMaterial G4_BGO
 Tank material set to G4_BGO
-/opnovice2/worldMaterial G4_AIR
-/opnovice2/boxProperty ABSLENGTH 0.000002 1 0.000005 2 0.000008 3
+/OpNovice4/worldMaterial G4_AIR
+/OpNovice4/boxProperty ABSLENGTH 0.000002 1 0.000005 2 0.000008 3
 The MPT for the box is now: 
 16: ABSLENGTH
 2e-06   1
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxProperty RAYLEIGH 0.000002 1 0.000008 1
+/OpNovice4/boxProperty RAYLEIGH 0.000002 1 0.000008 1
 The MPT for the box is now: 
 11: RAYLEIGH
 2e-06   1
@@ -117,7 +117,7 @@ The MPT for the box is now:
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
+/OpNovice4/boxProperty RINDEX 0.000002 1.3 0.000008 1.4
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -133,7 +133,7 @@ The MPT for the box is now:
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxProperty WLSABSLENGTH 0.000005 100000 0.000006 0.06 0.000007 0.08 0.000008 0.09 .000009 100000
+/OpNovice4/boxProperty WLSABSLENGTH 0.000005 100000 0.000006 0.06 0.000007 0.08 0.000008 0.09 .000009 100000
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -155,7 +155,7 @@ The MPT for the box is now:
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxProperty WLSCOMPONENT 0.000003 0.1 0.000004 0.4 0.000005 0.7 0.000006 0.6 0.000007 0.1
+/OpNovice4/boxProperty WLSCOMPONENT 0.000003 0.1 0.000004 0.4 0.000005 0.7 0.000006 0.6 0.000007 0.1
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -183,7 +183,7 @@ The MPT for the box is now:
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxProperty WLSABSLENGTH2 0.000002 100000 0.000003 0.36 0.000004 0.18 0.000005 0.09 .000006 10000
+/OpNovice4/boxProperty WLSABSLENGTH2 0.000002 100000 0.000003 0.36 0.000004 0.18 0.000005 0.09 .000006 10000
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -217,7 +217,7 @@ The MPT for the box is now:
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxProperty WLSCOMPONENT2 0.000002 0.1 0.000003 0.8 0.000004 0.9 .000005 0.1
+/OpNovice4/boxProperty WLSCOMPONENT2 0.000002 0.1 0.000003 0.8 0.000004 0.9 .000005 0.1
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -256,7 +256,7 @@ The MPT for the box is now:
 5e-06   2
 8e-06   3
 .............
-/opnovice2/boxConstProperty WLSMEANNUMBERPHOTONS 1
+/OpNovice4/boxConstProperty WLSMEANNUMBERPHOTONS 1
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -296,7 +296,7 @@ The MPT for the box is now:
 8e-06   3
 3: WLSMEANNUMBERPHOTONS 1
 .............
-/opnovice2/boxConstProperty WLSMEANNUMBERPHOTONS2 3
+/OpNovice4/boxConstProperty WLSMEANNUMBERPHOTONS2 3
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -337,7 +337,7 @@ The MPT for the box is now:
 3: WLSMEANNUMBERPHOTONS 1
 5: WLSMEANNUMBERPHOTONS2 3
 .............
-/opnovice2/boxConstProperty WLSTIMECONSTANT 1.0
+/OpNovice4/boxConstProperty WLSTIMECONSTANT 1.0
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -379,7 +379,7 @@ The MPT for the box is now:
 4: WLSTIMECONSTANT 1
 5: WLSMEANNUMBERPHOTONS2 3
 .............
-/opnovice2/boxConstProperty WLSTIMECONSTANT2 2.0
+/OpNovice4/boxConstProperty WLSTIMECONSTANT2 2.0
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.3
@@ -422,7 +422,7 @@ The MPT for the box is now:
 5: WLSMEANNUMBERPHOTONS2 3
 6: WLSTIMECONSTANT2 2
 .............
-/opnovice2/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
+/OpNovice4/worldProperty RINDEX 0.000002 1.01 0.000008 1.01
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.01
@@ -431,7 +431,7 @@ The MPT for the world is now:
 2e-06   296.824
 8e-06   296.824
 .............
-/opnovice2/worldProperty ABSLENGTH 0.000002 100 0.000005 100 0.000008 100
+/OpNovice4/worldProperty ABSLENGTH 0.000002 100 0.000005 100 0.000008 100
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.01
@@ -488,7 +488,7 @@ OpWLS2 is created
 /gun/energy 7 eV
 /gun/position 0 0 0 m
 /gun/direction 1 0 0
-/opnovice2/gun/optPhotonPolar
+/OpNovice4/gun/optPhotonPolar
 #
 /run/printProgress 1000
 /run/beamOn 10000

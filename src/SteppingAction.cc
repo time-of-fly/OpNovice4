@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 //
-/// \file optical/OpNovice2/src/SteppingAction.cc
+/// \file optical/OpNovice4/src/SteppingAction.cc
 /// \brief Implementation of the SteppingAction class
 //
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -342,7 +342,7 @@ void SteppingAction::UserSteppingAction(const G4Step* step)
         ed << "Optical photon group velocity: " << trackVelocity / (cm / ns)
            << " cm/ns is not what is expected from " << G4endl << "the material properties, "
            << materialVelocity / (cm / ns) << " cm/ns";
-        G4Exception("OpNovice2 SteppingAction", "OpNovice2_1", FatalException, ed);
+        G4Exception("OpNovice4 SteppingAction", "OpNovice4_1", FatalException, ed);
       }
     }
     // end of group velocity test

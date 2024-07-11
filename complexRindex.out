@@ -97,9 +97,9 @@ Some /vis commands (optionally) take a string to specify colour.
 /process/optical/verbose 1
 /run/physicsModified
 /control/cout/ignoreThreadsExcept 0
-/opnovice2/worldMaterial G4_Al
+/OpNovice4/worldMaterial G4_Al
 World material set to G4_Al
-/opnovice2/worldProperty RINDEX 0.000002 1.38 0.000004 0.28 0.000006 0.13 0.000008 0.077
+/OpNovice4/worldProperty RINDEX 0.000002 1.38 0.000004 0.28 0.000006 0.13 0.000008 0.077
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.38
@@ -112,7 +112,7 @@ The MPT for the world is now:
 5e-06   1462.4
 8e-06   3893.41
 .............
-/opnovice2/worldProperty ABSLENGTH 0.000002 6.75e-9 0.000004 6.65e-9 0.000006 6.96e-9 0.000008 7.45e-9
+/OpNovice4/worldProperty ABSLENGTH 0.000002 6.75e-9 0.000004 6.65e-9 0.000006 6.96e-9 0.000008 7.45e-9
 The MPT for the world is now: 
 0: RINDEX
 2e-06   1.38
@@ -130,9 +130,9 @@ The MPT for the world is now:
 6e-06   6.96e-09
 8e-06   7.45e-09
 .............
-/opnovice2/boxMaterial G4_AIR
+/OpNovice4/boxMaterial G4_AIR
 Tank material set to G4_AIR
-/opnovice2/boxProperty RINDEX 0.000002 1.01 0.000008 1.01
+/OpNovice4/boxProperty RINDEX 0.000002 1.01 0.000008 1.01
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.01
@@ -141,7 +141,7 @@ The MPT for the box is now:
 2e-06   296.824
 8e-06   296.824
 .............
-/opnovice2/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 The MPT for the box is now: 
 0: RINDEX
 2e-06   1.01
@@ -154,13 +154,13 @@ The MPT for the box is now:
 5e-06   2e+06
 8e-06   3e+06
 .............
-/opnovice2/surfaceModel unified
+/OpNovice4/surfaceModel unified
 /run/geometryModified
-/opnovice2/surfaceType dielectric_metal
+/OpNovice4/surfaceType dielectric_metal
 /run/geometryModified
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 /run/geometryModified
-/opnovice2/surfaceProperty REALRINDEX 0.000002 1.38 0.000004 0.28 0.000006 0.13 0.000008 0.077
+/OpNovice4/surfaceProperty REALRINDEX 0.000002 1.38 0.000004 0.28 0.000006 0.13 0.000008 0.077
 REALRINDEX 0.000002 1.38 0.000004 0.28 0.000006 0.13 0.000008 0.077
 The MPT for the surface is now: 
 2: REALRINDEX
@@ -169,7 +169,7 @@ The MPT for the surface is now:
 6e-06   0.13
 8e-06   0.077
 .............
-/opnovice2/surfaceProperty IMAGINARYRINDEX 0.000002 7.31 0.000004 3.71 0.000006 2.40 0.000008 1.71
+/OpNovice4/surfaceProperty IMAGINARYRINDEX 0.000002 7.31 0.000004 3.71 0.000006 2.40 0.000008 1.71
 IMAGINARYRINDEX 0.000002 7.31 0.000004 3.71 0.000006 2.40 0.000008 1.71
 The MPT for the surface is now: 
 2: REALRINDEX
@@ -214,8 +214,8 @@ OpWLS2 is created
 /gun/energy 4 eV
 /gun/position 90 0 0 cm
 /gun/direction 1 0 0
-/opnovice2/gun/optPhotonPolar 0. deg
-/opnovice2/gun/randomDirection true
+/OpNovice4/gun/optPhotonPolar 0. deg
+/OpNovice4/gun/randomDirection true
 /analysis/setFileName complexRindex_0
 /analysis/h1/set 24 90 0 90
 /analysis/h1/set 26 90 0 90
@@ -1025,7 +1025,7 @@ There are histograms that can be viewed with visualization:
   plotting in this UI session, use CloseFile(false) in your
   EndOfRunAction and Reset() in your BeginOfRunAction.
 /analysis/setFileName complexRindex_90
-/opnovice2/gun/optPhotonPolar 90. deg
+/OpNovice4/gun/optPhotonPolar 90. deg
 /run/beamOn 500000
 ### Run 1 starts.
 ... create file : complexRindex_90.root - done

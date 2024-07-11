@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 //
-/// \file OpNovice2/include/SteppingVerbose.hh
+/// \file OpNovice4/include/SteppingVerbose.hh
 //
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 

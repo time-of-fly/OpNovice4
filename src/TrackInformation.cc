@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/TrackInformation.cc
+/// \file optical/OpNovice4/src/TrackInformation.cc
 /// \brief Implementation of the TrackInformation class
 //
 //

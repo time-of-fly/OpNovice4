@@ -23,7 +23,7 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file optical/OpNovice2/src/DetectorMessenger.cc
+/// \file optical/OpNovice4/src/DetectorMessenger.cc
 /// \brief Implementation of the DetectorMessenger class
 //
 //
@@ -51,78 +51,78 @@
 
 DetectorMessenger::DetectorMessenger(DetectorConstruction* Det) : G4UImessenger(), fDetector(Det)
 {
-  fOpticalDir = new G4UIdirectory("/opnovice2/");
+  fOpticalDir = new G4UIdirectory("/OpNovice4/");
   fOpticalDir->SetGuidance("Parameters for optical simulation.");
 
-  fSurfaceTypeCmd = new G4UIcmdWithAString("/opnovice2/surfaceType", this);
+  fSurfaceTypeCmd = new G4UIcmdWithAString("/OpNovice4/surfaceType", this);
   fSurfaceTypeCmd->SetGuidance("Surface type.");
   fSurfaceTypeCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceTypeCmd->SetToBeBroadcasted(false);
 
-  fSurfaceFinishCmd = new G4UIcmdWithAString("/opnovice2/surfaceFinish", this);
+  fSurfaceFinishCmd = new G4UIcmdWithAString("/OpNovice4/surfaceFinish", this);
   fSurfaceFinishCmd->SetGuidance("Surface finish.");
   fSurfaceFinishCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceFinishCmd->SetToBeBroadcasted(false);
 
-  fSurfaceModelCmd = new G4UIcmdWithAString("/opnovice2/surfaceModel", this);
+  fSurfaceModelCmd = new G4UIcmdWithAString("/OpNovice4/surfaceModel", this);
   fSurfaceModelCmd->SetGuidance("surface model.");
   fSurfaceModelCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceModelCmd->SetToBeBroadcasted(false);
 
-  fSurfaceSigmaAlphaCmd = new G4UIcmdWithADouble("/opnovice2/surfaceSigmaAlpha", this);
+  fSurfaceSigmaAlphaCmd = new G4UIcmdWithADouble("/OpNovice4/surfaceSigmaAlpha", this);
   fSurfaceSigmaAlphaCmd->SetGuidance("surface sigma alpha");
   fSurfaceSigmaAlphaCmd->SetGuidance(" parameter.");
   fSurfaceSigmaAlphaCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceSigmaAlphaCmd->SetToBeBroadcasted(false);
 
-  fSurfacePolishCmd = new G4UIcmdWithADouble("/opnovice2/surfacePolish", this);
+  fSurfacePolishCmd = new G4UIcmdWithADouble("/OpNovice4/surfacePolish", this);
   fSurfacePolishCmd->SetGuidance("surface polish");
   fSurfacePolishCmd->SetGuidance(" parameter (for Glisur model).");
   fSurfacePolishCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfacePolishCmd->SetToBeBroadcasted(false);
 
-  fSurfaceMatPropVectorCmd = new G4UIcmdWithAString("/opnovice2/surfaceProperty", this);
+  fSurfaceMatPropVectorCmd = new G4UIcmdWithAString("/OpNovice4/surfaceProperty", this);
   fSurfaceMatPropVectorCmd->SetGuidance("Set material property vector");
   fSurfaceMatPropVectorCmd->SetGuidance(" for the surface.");
   fSurfaceMatPropVectorCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceMatPropVectorCmd->SetToBeBroadcasted(false);
 
-  fSurfaceMatPropConstCmd = new G4UIcmdWithAString("/opnovice2/surfaceConstProperty", this);
+  fSurfaceMatPropConstCmd = new G4UIcmdWithAString("/OpNovice4/surfaceConstProperty", this);
   fSurfaceMatPropConstCmd->SetGuidance("Set material constant property");
   fSurfaceMatPropConstCmd->SetGuidance(" for the surface.");
   fSurfaceMatPropConstCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fSurfaceMatPropConstCmd->SetToBeBroadcasted(false);
 
-  fTankMatPropVectorCmd = new G4UIcmdWithAString("/opnovice2/boxProperty", this);
+  fTankMatPropVectorCmd = new G4UIcmdWithAString("/OpNovice4/boxProperty", this);
   fTankMatPropVectorCmd->SetGuidance("Set material property vector for ");
   fTankMatPropVectorCmd->SetGuidance("the box.");
   fTankMatPropVectorCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fTankMatPropVectorCmd->SetToBeBroadcasted(false);
 
-  fTankMatPropConstCmd = new G4UIcmdWithAString("/opnovice2/boxConstProperty", this);
+  fTankMatPropConstCmd = new G4UIcmdWithAString("/OpNovice4/boxConstProperty", this);
   fTankMatPropConstCmd->SetGuidance("Set material constant property ");
   fTankMatPropConstCmd->SetGuidance("for the box.");
   fTankMatPropConstCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fTankMatPropConstCmd->SetToBeBroadcasted(false);
 
-  fTankMaterialCmd = new G4UIcmdWithAString("/opnovice2/boxMaterial", this);
+  fTankMaterialCmd = new G4UIcmdWithAString("/OpNovice4/boxMaterial", this);
   fTankMaterialCmd->SetGuidance("Set material of box.");
   fTankMaterialCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fTankMaterialCmd->SetToBeBroadcasted(false);
 
-  fWorldMatPropVectorCmd = new G4UIcmdWithAString("/opnovice2/worldProperty", this);
+  fWorldMatPropVectorCmd = new G4UIcmdWithAString("/OpNovice4/worldProperty", this);
   fWorldMatPropVectorCmd->SetGuidance("Set material property vector ");
   fWorldMatPropVectorCmd->SetGuidance("for the world.");
   fWorldMatPropVectorCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fWorldMatPropVectorCmd->SetToBeBroadcasted(false);
 
-  fWorldMatPropConstCmd = new G4UIcmdWithAString("/opnovice2/worldConstProperty", this);
+  fWorldMatPropConstCmd = new G4UIcmdWithAString("/OpNovice4/worldConstProperty", this);
   fWorldMatPropConstCmd->SetGuidance("Set material constant property");
   fWorldMatPropConstCmd->SetGuidance(" for the world.");
   fWorldMatPropConstCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fWorldMatPropConstCmd->SetToBeBroadcasted(false);
 
-  fWorldMaterialCmd = new G4UIcmdWithAString("/opnovice2/worldMaterial", this);
+  fWorldMaterialCmd = new G4UIcmdWithAString("/OpNovice4/worldMaterial", this);
   fWorldMaterialCmd->SetGuidance("Set material of world.");
   fWorldMaterialCmd->AvailableForStates(G4State_PreInit, G4State_Idle);
   fWorldMaterialCmd->SetToBeBroadcasted(false);
@@ -275,7 +275,7 @@ void DetectorMessenger::SetNewValue(G4UIcommand* command, G4String newValue)
     else {
       G4ExceptionDescription ed;
       ed << "Invalid surface finish: " << newValue;
-      G4Exception("DetectorMessenger", "OpNovice2_003", FatalException, ed);
+      G4Exception("DetectorMessenger", "OpNovice4_003", FatalException, ed);
     }
   }
 
@@ -323,7 +323,7 @@ void DetectorMessenger::SetNewValue(G4UIcommand* command, G4String newValue)
     else {
       G4ExceptionDescription ed;
       ed << "Invalid surface type: " << newValue;
-      G4Exception("DetectorMessenger", "OpNovice2_002", FatalException, ed);
+      G4Exception("DetectorMessenger", "OpNovice4_002", FatalException, ed);
     }
   }
   else if (command == fSurfaceSigmaAlphaCmd) {

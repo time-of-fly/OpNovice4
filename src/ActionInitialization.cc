@@ -24,7 +24,7 @@
 // ********************************************************************
 //
 //
-/// \file optical/OpNovice2/src/ActionInitialization.cc
+/// \file optical/OpNovice4/src/ActionInitialization.cc
 /// \brief Implementation of the ActionInitialization class
 
 #include "ActionInitialization.hh"

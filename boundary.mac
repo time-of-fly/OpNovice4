@@ -4,32 +4,32 @@
 /process/optical/verbose 1
 /control/cout/ignoreThreadsExcept 0
 
-/opnovice2/boxProperty RINDEX    0.000002 1.3     0.000008 1.4
-/opnovice2/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/boxProperty RINDEX    0.000002 1.3     0.000008 1.4
+/OpNovice4/boxProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 
-/opnovice2/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
-/opnovice2/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
+/OpNovice4/worldProperty RINDEX    0.000002 1.01    0.000008 1.01
+/OpNovice4/worldProperty ABSLENGTH 0.000002 1000000 0.000005 2000000 0.000008 3000000
 
-/opnovice2/surfaceProperty SPECULARLOBECONSTANT  0.000002 0.1 0.000008 0.1
-/opnovice2/surfaceProperty SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
-/opnovice2/surfaceProperty BACKSCATTERCONSTANT   0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty SPECULARLOBECONSTANT  0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty SPECULARSPIKECONSTANT 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty BACKSCATTERCONSTANT   0.000002 0.1 0.000008 0.1
 
-/opnovice2/surfaceProperty TRANSMITTANCE 0.000002 0.1 0.000008 0.1
-/opnovice2/surfaceProperty REFLECTIVITY  0.000002 0.8 0.000008 0.8
-/opnovice2/surfaceProperty EFFICIENCY    0.000002 0.1 0.000008 0.1
-/opnovice2/surfaceProperty RINDEX        0.000002 1.4 0.000008 1.5
+/OpNovice4/surfaceProperty TRANSMITTANCE 0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty REFLECTIVITY  0.000002 0.8 0.000008 0.8
+/OpNovice4/surfaceProperty EFFICIENCY    0.000002 0.1 0.000008 0.1
+/OpNovice4/surfaceProperty RINDEX        0.000002 1.4 0.000008 1.5
 
-/opnovice2/surfaceSigmaAlpha 0.2
+/OpNovice4/surfaceSigmaAlpha 0.2
 
 /run/initialize
-/opnovice2/stepping/killOnSecondSurface true
+/OpNovice4/stepping/killOnSecondSurface true
 #
 /gun/particle opticalphoton
 /gun/energy 3 eV
 /gun/position 0 0 0 cm
 # will be normalized
 /gun/direction .9 .44 0
-/opnovice2/gun/optPhotonPolar
+/OpNovice4/gun/optPhotonPolar
 #
 /analysis/setFileName unified
 /analysis/h1/set 10  40 -1 39
@@ -48,60 +48,60 @@
 ################################# UNIFIED #####################################
 ###############################################################################
 
-/opnovice2/surfaceModel unified
-/opnovice2/surfaceType dielectric_dielectric
+/OpNovice4/surfaceModel unified
+/OpNovice4/surfaceType dielectric_dielectric
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ground ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 ## unified, davis, lut use sigma_alpha; glisur uses polish
 /run/beamOn 10000
 # restore default
-#/opnovice2/surfaceSigmaAlpha 0.0
+#/OpNovice4/surfaceSigmaAlpha 0.0
 
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ polished ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.01
 /run/initialize
 /run/beamOn 10000
 # restore default
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.0
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.0
 
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ painted ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceFinish polishedfrontpainted
+/OpNovice4/surfaceFinish polishedfrontpainted
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish groundfrontpainted
+/OpNovice4/surfaceFinish groundfrontpainted
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish polishedbackpainted
+/OpNovice4/surfaceFinish polishedbackpainted
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish groundbackpainted
+/OpNovice4/surfaceFinish groundbackpainted
 /run/initialize
 /run/beamOn 10000
 
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dielectric_metal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
-/opnovice2/surfaceType dielectric_metal
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceType dielectric_metal
+/OpNovice4/surfaceFinish polished
 
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 
 /run/initialize
 /run/beamOn 10000
@@ -110,72 +110,72 @@
 ################################# GLISUR ######################################
 ###############################################################################
 
-/opnovice2/surfaceModel glisur
-/opnovice2/surfaceType dielectric_dielectric
+/OpNovice4/surfaceModel glisur
+/OpNovice4/surfaceType dielectric_dielectric
 
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ polished ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
 
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceFinish polished
 
 /analysis/setFileName glisur
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.01
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.01
 /run/initialize
 /run/beamOn 10000
-/opnovice2/surfaceConstProperty SURFACEROUGHNESS 0.0
+/OpNovice4/surfaceConstProperty SURFACEROUGHNESS 0.0
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ground ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
 
 
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/initialize
-/opnovice2/surfacePolish 0.2
+/OpNovice4/surfacePolish 0.2
 /run/beamOn 10000
 # restore default
-/opnovice2/surfacePolish 1.0
+/OpNovice4/surfacePolish 1.0
 
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ painted ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
 
-/opnovice2/surfaceFinish polishedfrontpainted
+/OpNovice4/surfaceFinish polishedfrontpainted
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish polishedbackpainted
+/OpNovice4/surfaceFinish polishedbackpainted
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish groundfrontpainted
+/OpNovice4/surfaceFinish groundfrontpainted
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish groundbackpainted
-/opnovice2/surfacePolish 0.2
+/OpNovice4/surfaceFinish groundbackpainted
+/OpNovice4/surfacePolish 0.2
 /run/initialize
 /run/beamOn 10000
-/opnovice2/surfacePolish 1.0
+/OpNovice4/surfacePolish 1.0
 
 #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dielectric_metal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #
 
-/opnovice2/surfaceType dielectric_metal
-/opnovice2/surfaceFinish polished
+/OpNovice4/surfaceType dielectric_metal
+/OpNovice4/surfaceFinish polished
 
 /run/initialize
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish ground
+/OpNovice4/surfaceFinish ground
 /run/initialize
-/opnovice2/surfacePolish 0.2
+/OpNovice4/surfacePolish 0.2
 /run/beamOn 10000
-/opnovice2/surfacePolish 1.0
+/OpNovice4/surfacePolish 1.0
 
 
 ###############################################################################
@@ -183,9 +183,9 @@
 ###############################################################################
 
 
-/opnovice2/surfaceModel DAVIS
-/opnovice2/surfaceType dielectric_LUTDAVIS
-/opnovice2/surfaceFinish RoughTeflon_LUT
+/OpNovice4/surfaceModel DAVIS
+/OpNovice4/surfaceType dielectric_LUTDAVIS
+/OpNovice4/surfaceFinish RoughTeflon_LUT
 
 /run/initialize
 
@@ -193,7 +193,7 @@
 
 /run/beamOn 10000
 
-/opnovice2/surfaceFinish Detector_LUT
+/OpNovice4/surfaceFinish Detector_LUT
 /analysis/setFileName davis_detector
 /run/beamOn 10000
 
@@ -202,10 +202,10 @@
 ################################# LUT (LBNL) ##################################
 ###############################################################################
 
-/opnovice2/surfaceModel LUT
-/opnovice2/surfaceType dielectric_LUT
+/OpNovice4/surfaceModel LUT
+/OpNovice4/surfaceType dielectric_LUT
 
-/opnovice2/surfaceFinish polishedlumirrorair
+/OpNovice4/surfaceFinish polishedlumirrorair
 /analysis/setFileName lbnl_polishedLumirrorAir
 /run/beamOn 1000
 
