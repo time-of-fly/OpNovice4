@@ -29,21 +29,21 @@
 /OpNovice4/gun/optPhotonPolar 10. deg
 /run/beamOn 50
 
-/gun/direction 0 0.1 1
-/run/beamOn 50
-/gun/direction 0 0.2 1
-/run/beamOn 50
-/gun/direction 0 0.3 1
-/run/beamOn 50
-/gun/direction 0 0.4 1
-/run/beamOn 50
-/gun/direction 0 0.5 1
-/run/beamOn 50
-/gun/direction 0 0.6 1
-/run/beamOn 50
-/gun/direction 0 0.7 1
-/run/beamOn 50
-/gun/direction 0 0.8 1
-/run/beamOn 50
+#/gun/direction 0 0.1 1
+#/run/beamOn 50
+#/gun/direction 0 0.2 1
+#/run/beamOn 50
+#/gun/direction 0 0.3 1
+#/run/beamOn 50
+#/gun/direction 0 0.4 1
+#/run/beamOn 50
+#/gun/direction 0 0.5 1
+#/run/beamOn 50
+#/gun/direction 0 0.6 1
+#/run/beamOn 50
+#/gun/direction 0 0.7 1
+#/run/beamOn 50
+#/gun/direction 0 0.8 1
+#/run/beamOn 50
 /gun/direction 0 0.9 1
 /run/beamOn 50
