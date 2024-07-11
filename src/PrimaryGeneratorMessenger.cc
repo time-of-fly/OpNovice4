@@ -59,6 +59,12 @@ PrimaryGeneratorMessenger::PrimaryGeneratorMessenger(PrimaryGeneratorAction* Gun
   fRandomDirectionCmd->SetGuidance("Set direction of each primary particle randomly.");
   fRandomDirectionCmd->SetDefaultValue(true);
   fRandomDirectionCmd->AvailableForStates(G4State_Idle, G4State_PreInit);
+
+  fLidarDirectionCmd = new G4UIcmdWithABool("/OpNovice4/gun/lidarDirection", this);
+  fLidarDirectionCmd->SetGuidance("swiping like lidar");
+  fLidarDirectionCmd->SetDefaultValue(true);
+  fLidarDirectionCmd->AvailableForStates(G4State_Idle, G4State_PreInit);
+
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -68,6 +74,7 @@ PrimaryGeneratorMessenger::~PrimaryGeneratorMessenger()
   delete fPolarCmd;
   delete fGunDir;
   delete fRandomDirectionCmd;
+  delete fLidarDirectionCmd;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -87,6 +94,11 @@ void PrimaryGeneratorMessenger::SetNewValue(G4UIcommand* command, G4String newVa
     //GetNewBoolValue
     G4bool s_randomDir = fRandomDirectionCmd->GetNewBoolValue(newValue);
     fPrimaryAction->SetRandomDirection(s_randomDir);
+  }
+  else if (command == fLidarDirectionCmd) {
+    //LidarDirection
+    G4bool s_lidarDir = fLidarDirectionCmd->GetNewBoolValue(newValue);
+    fPrimaryAction->SetLidarDirection(s_lidarDir);
   }
 }
 

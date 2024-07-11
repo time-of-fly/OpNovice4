@@ -86,6 +86,16 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
     G4ThreeVector dir(x, y, z);
     fParticleGun->SetParticleMomentumDirection(dir);
   }
+  else if (fLidarDirection)
+  {
+    auto eventID = anEvent->GetEventID()
+    G4double x = ((eventID-(eventID % 256))/256.0)/100.0;
+    G4double y = ((eventID % 256)-127.5)/100.0;
+    G4double z = 1;
+    G4ThreeVector dir(x, y, z);
+    fParticleGun->SetParticleMomentumDirection(dir);
+  }
+
   if (fParticleGun->GetParticleDefinition() == G4OpticalPhoton::OpticalPhotonDefinition()) {
     if (fPolarized)
       SetOptPhotonPolar(fPolarization);
@@ -134,4 +144,8 @@ void PrimaryGeneratorAction::SetOptPhotonPolar(G4double angle)
 void PrimaryGeneratorAction::SetRandomDirection(G4bool val)
 {
   fRandomDirection = val;
+}
+void PrimaryGeneratorAction::SetLidarDirection(G4bool val)
+{
+  fLidarDirection = val;
 }
