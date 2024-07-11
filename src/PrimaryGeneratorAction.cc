@@ -88,7 +88,7 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   }
   else if (fLidarDirection)
   {
-    auto eventID = anEvent->GetEventID()
+    auto eventID = anEvent->GetEventID();
     G4double x = ((eventID-(eventID % 256))/256.0)/100.0;
     G4double y = ((eventID % 256)-127.5)/100.0;
     G4double z = 1;

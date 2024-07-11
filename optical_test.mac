@@ -31,6 +31,7 @@
 /gun/direction 0 0 1
 #
 /OpNovice4/gun/randomDirection false
+/OpNovice4/gun/lidarDirection true
 /analysis/setFileName fresnel_10
 /OpNovice4/gun/optPhotonPolar 10. deg
 /run/beamOn 50
