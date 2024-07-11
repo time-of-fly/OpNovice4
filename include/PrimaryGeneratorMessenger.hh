@@ -59,6 +59,7 @@ class PrimaryGeneratorMessenger : public G4UImessenger
     G4UIdirectory* fGunDir = nullptr;
     G4UIcmdWithADoubleAndUnit* fPolarCmd = nullptr;
     G4UIcmdWithABool* fRandomDirectionCmd = nullptr;
+    G4UIcmdWithABool* fLidarDirectionCmd = nullptr;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

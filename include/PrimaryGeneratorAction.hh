@@ -55,6 +55,7 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     void SetOptPhotonPolar();
     void SetOptPhotonPolar(G4double);
     void SetRandomDirection(G4bool val = true);
+    void SetLidarDirection(G4bool val = true);
     G4bool GetPolarized() { return fPolarized; };
     G4double GetPolarization() { return fPolarization; }
 
@@ -62,6 +63,7 @@ class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
     G4ParticleGun* fParticleGun = nullptr;
     PrimaryGeneratorMessenger* fGunMessenger = nullptr;
     G4bool fRandomDirection = false;
+    G4bool fLidarDirection = false;
     G4bool fPolarized = false;
     G4double fPolarization = 0.;
 };
