@@ -50,7 +50,7 @@ set(OpNovice4_SCRIPTS
     scint_by_particle.mac
     vis.mac
     wls.mac
-    air_block3.stl
+    air_block_mini.stl
     optical_test.mac
   )
 
