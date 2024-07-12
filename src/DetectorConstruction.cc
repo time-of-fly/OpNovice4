@@ -112,10 +112,12 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
                                            
   );
 
+  auto underwater_object = new G4Orb("underwater",fObject_R);
+
 
   //fTank_LV = new G4LogicalVolume(tank_box, fTankMaterial, "Tank");
 
-  fTank = new G4PVPlacement(nullptr, G4ThreeVector(-10.*m,-10.*m,0.*m), fTank_LV, "Tank", fWorld_LV, false, 0);
+  fTank = new G4PVPlacement(nullptr, G4ThreeVector(-29.5.*m,-29.5.*m,0.*m), fTank_LV, "Tank", fWorld_LV, false, 0);
 
   // ------------- Surface --------------
 

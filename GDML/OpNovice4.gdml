@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+
+  <define>
+    <!-- Define constants, positions, rotations -->
+  </define>
+
+  <materials>
+    <!-- Define materials -->
+  </materials>
+
+  <solids>
+    <!-- Define solid shapes -->
+  </solids>
+
+  <structure>
+    <!-- Define logical volumes and placements -->
+  </structure>
+
+  <setup name="Default" version="1.0">
+    <!-- Specify the world volume -->
+  </setup>
+
+</gdml>
